@@ -1,0 +1,69 @@
+<h1>Assigment :3 On Directive </h1>
+
+---------------------------------------------------------------------------------------------
+<h2> Directive is used for MANUPULATE DOM ELEMENT And CHANGE THE BEHAVIOUR / LAYOUT</h2>
+
+<table class="table">
+    <tr>
+        <td>1.component Directive</td>
+        <td>2.structure Directive</td>
+        <td>3.Atribute directive</td>
+        <td>4. custome directiveng </td>
+    </tr>
+
+    <tr>
+        <td> Componets tag is the example</td>
+        <td> 1. *ngFor 2.*ngIf 3.*ngSwitch </td>
+        <td>1.*ngStyle 2.*NgClass</td>
+        <td> syntax ng g c directiveName</td>
+    </tr>
+
+</table>
+
+<table>
+    <tr>
+        <td class="first_td">
+            <h3>all singer's Details</h3>
+            <div *ngFor="let item of singing">
+                <!--fro singing it takes one object -->
+
+                <ul>
+
+                    <li>{{item.singerName}}</li> <!-- item contain singer mane -->
+                    <li>{{item.sangSong}}</li>
+                    <li>{{item.album_Movie}}</li>
+                </ul>
+
+            </div>
+        </td>
+
+        <td>
+            <h3 class="h">Singer who Sing more Than 50 Song</h3>
+            <div *ngFor="let item of singing">
+                <div *ngIf="item.sangSong>50">
+                    <!-- Condition for taking details of greter than 50 song sang -->
+
+                    <ul>
+                        <li>{{item.singerName}}</li>
+                        <li>{{item.sangSong}}</li>
+                        <li>{{item.album_Movie}}</li>
+                    </ul>
+                </div>
+            </div>
+        </td>
+        <td>
+            <h3 class="h">Singer who Sing Less Than 50 Song</h3>
+            <div *ngFor="let item of singing">
+                <div *ngIf="item.sangSong<50">
+                    <!-- Condition for taking details of greter than 50 song sang -->
+
+                    <ul>
+                        <li>{{item.singerName}}</li>
+                        <li>{{item.sangSong}}</li>
+                        <li>{{item.album_Movie}}</li>
+                    </ul>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>

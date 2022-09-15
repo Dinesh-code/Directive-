@@ -1,0 +1,26 @@
+.table td {
+    border: 1px solid white;
+    padding-top: 0px;
+    text-align: left;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.h {
+    margin-top: -280px;
+}
+
+table td {
+    width: auto;
+    border: 1px solid blueviolet;
+}
+
+table, h2 {
+    margin-left: 5%;
+}
+
+.first_td {
+    padding-left: 26px;
+    padding-right: 49px;
+}
